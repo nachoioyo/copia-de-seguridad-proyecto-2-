@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        td {
+            padding: 10px;
+        }
+
+        th {
+            color: #ff1b1b;
+            padding: 12px;
+        }
+    </style>
+
+    <script>
+
+
+
+
+
+
+        tabla = "<table border='1'>";
+
+        var alumnos = [
+            {
+                "nombre": "Pablo",
+                "apellido": "Fiscella",
+                "notas":
+                {
+                    "B1": [10, 4, 5, 4, 10],
+                    "B2": [4, 8, 2, 4, 10],
+                    "B3": [5, 2, 2, 10, 10],
+                    "B4": [10, 3, 8, 4, 10]
+                }
+            },
+            {
+                "nombre": "Maria",
+                "apellido": "Suarez",
+                "notas":
+                {
+                    "B1": [2, 10, 4, 9, 9],
+                    "B2": [4, 4, 3, 6, 10],
+                    "B3": [10, 2, 10, 8, 9],
+                    "B4": [10, 4, 5, 4, 10]
+                }
+            },
+            {
+                "nombre": "Juan",
+                "apellido": "Pedro Leon",
+                "notas":
+                {
+                    "B1": [10, 10, 10, 10, 10],
+                    "B2": [10, 10, 10, 10, 10],
+                    "B3": [10, 10, 10, 10, 10],
+                    "B4": [10, 10, 10, 10, 10]
+                }
+            }
+        ]
+        tabla += "<tr>";
+        tabla += "<th>Nombre</th>";
+        tabla += "<th>Apellido</th>";
+        tabla += "<th>Bimestre 1</th>";
+        tabla += "<th>Bimestre 2</th>";
+        tabla += "<th>Bimestre 3</th>";
+        tabla += "<th>Bimestre 4</th>";
+        tabla += "<th>Nota final</th>";
+        tabla += "</tr>";
+
+        for (y = 0; y < alumnos.length; y++) {
+            tabla += "<tr>"
+            tabla += "<td>" + alumnos[y]["nombre"] + "</td>"
+            tabla += "<td>" + alumnos[y]["apellido"] + "</td>"
+            var NotaFinal=0;
+            for (x = 1; x < 5; x++) {
+                promedio = 0;                
+                for (b = 0; b < alumnos[y]["notas"]["B" + x].length; b++) {
+                    promedio += alumnos[y]["notas"]["B" + x][b];
+                }
+                var promedios = 0;
+                promedios = promedio / alumnos[y]["notas"]["B" + x].length
+                tabla += "<td>" + promedios + "</td>"
+                NotaFinal += promedios;
+            }
+            tabla += "<td>" + NotaFinal / 4 + "</td>"
+
+        }
+
+        tabla += "</table>"
+        document.write(tabla)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // for (x = 0; x < alumnos.length; x++) {
+        //     notaFinal=0;
+        //     tabla += "<tr>"
+        //     tabla += "<td>" + alumnos[x]["nombre"] + "</td>"
+        //     tabla += "<td>" + alumnos[x]["apellido"] + "</td>"
+        //     //realizo este for para recorrer todos los bimestres
+        //     for(num=1;num<5;num++){
+        //      promedio=0;
+        //     for(o=0;o<alumnos[x]["notas"]["B"+num].length;o++){
+        //         // aca sumo todas las notas correspondientes
+        //     promedio+=alumnos[x]["notas"]["B"+num][o];
+        //      }
+        //      //hago una nueva variable
+        //       var promedioTotal=0;
+        //       //Para en esta igualar el promedio que contiene un valor antes que la suma de todas las
+        //       // notas y divido por la cantidad de notas que hay
+        //       promedioTotal=promedio/alumnos[x]["notas"]["B"+num].length;
+        //      tabla+="<td>"+promedioTotal+"</td>"
+        //     notaFinal+=promedioTotal;
+        // }
+        //     tabla+="<td>"+notaFinal/4+"<td>"
+        //         tabla += "</tr>";
+        // }
+        // tabla += "</table>";
+        // document.write(tabla)
+
+    </script>
+
+</body>
+
+</html>
