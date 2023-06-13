@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const tiendas = [
+            {
+                "nombre": "Tienda 1",
+                "productos": [
+                    {
+                        "id": 1,
+                        "tipo": "Camisa",
+                        "nombre": "Camisa",
+                        "precio": 20,
+                        "variantes": [
+                            { "color": "Rojo", "stock": 10 },
+                            { "color": "Azul", "stock": 15 },
+                            { "color": "Verde", "stock": 5 },
+                            { "color": "Verde", "stock": 15 },
+                            { "color": "Verde", "stock": 15 },
+                            { "color": "Verde", "stock": 15 }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "tipo": "Pantalón",
+                        "nombre": "Pantalón",
+                        "precio": 30,
+                        "variantes": [
+                            { "color": "Negro", "stock": 20 },
+                            { "color": "Gris", "stock": 10 }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre": "Tienda 2",
+                "productos": [
+                    {
+                        "id": 1,
+                        "tipo": "Camisa",
+                        "nombre": "Camisa",
+                        "precio": 25,
+                        "variantes": [
+                            { "color": "Rojo", "stock": 5 },
+                            { "color": "Azul", "stock": 20 },
+                            { "color": "Verde", "stock": 8 },
+                            { "color": "Verde", "stock": 8 },
+                            { "color": "Verde", "stock": 8 },
+                            { "color": "Verde", "stock": 8 },
+                            { "color": "Gris", "stock": 12 }
+                       
+
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "tipo": "Pantalón",
+                        "nombre": "Pantalón",
+                        "precio": 35,
+                        "variantes": [
+                            { "color": "Negro", "stock": 15 },
+                            { "color": "Gris", "stock": 12 },
+                            { "color": "Gris", "stock": 12 },
+                            { "color": "Gris", "stock": 12 }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        
+
+// 8 Encontrar la tienda con la mayor cantidad de variantes de productos
+g = 0;
+        h = "";
+        tiendas.forEach(shop => {
+            shop["productos"].forEach(producto => {
+                l = 0;
+                producto["variantes"].forEach(vari => {
+                    l++;
+                });
+                if (l > g) {
+                    h = shop["nombre"]
+                    g = l;
+                }
+            });
+        });
+        console.log("La tienda con mayor cantidad de variantes de productos es " + h);
+
+
+
+
+
+
+        // n = 0
+        // h = ""
+        // tiendas.forEach(tienda => {
+        //     tienda.productos.forEach(produc => {
+        //         m = 0;
+        //         produc.variantes.forEach(mayor => {
+        //             m++
+        //         })
+        //         if (m > n) {
+        //             m+=produc.variantes.length
+        //             h = tienda.nombre
+        //         }
+
+        //     })
+
+
+        // })
+        // console.log("la tienda con mayor cantidad de variantes es: " + h + " con " + m)
+    </script>
+</body>
+
+</html>
