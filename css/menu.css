@@ -1,0 +1,165 @@
+/* ------------ esto es para la animación del boton -------------*/
+.nav-item {
+    background-color: rgb(152, 81, 81);
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.nav-item:hover, .nav-link:hover {
+    background-color: rgb(95, 54, 54);
+    /* Green */
+    color: white;
+    border-radius: 4px;
+}
+/* ------------------------------------------------------------ */
+
+
+
+/*---------------- dar color a los botones ---------------------*/
+.nav-link{
+    color: white;
+}
+/* ------------------------------------------------------------ */
+
+
+
+/* ----------------- Dar espacio entre botones ---------------- */
+.navbar-nav>li {
+    width: 100px;
+    margin-right: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+} 
+/* ------------------------------------------------------------ */
+
+
+
+
+
+/*---------- centrar los botones en medio del encabezado ------ */
+#navbarNav {
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------*/
+
+
+
+
+
+/*------------------- color del borde del encabezado ------------*/
+.navbar {
+    background-color: #19294f !important;
+}
+/*---------------------------------------------------------------*/
+
+
+
+
+/*------------- cambios para el logo del a empresa --------------*/
+.navbar-brand {
+    width: 100px;
+    margin-left: 16px;
+    padding: 0 !important;
+}
+#logo-empresa {
+    padding-top: -5px !important;
+    width: 75px;
+}
+/*---------------------------------------------------------------*/
+
+body {
+    background-color:#2b3e6a !important; 
+}
+
+#titulo1 {
+    color:aqua;
+    font-family:'Courier New', Courier, monospace;
+}
+h2 {
+    color:aqua;
+    font-family:'Courier New', Courier, monospace;
+    width: 100px;
+    margin-top: -60px;
+    margin-left: 200px;
+}
+p {
+    color:aqua;
+    margin-left: 400px;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+
+#intro {
+    color:aqua;
+    margin-left: -350px;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+
+
+/*---------------- clases para dar forma al div -----------------*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .left {
+    color:red;
+    background-color: rgb(46, 46, 46);
+    padding: 20px;
+    float: left;
+    width: 100%;
+  }
+  
+  .main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 20%; 
+  }
+  /* cambia el parrafo solamenten lo que esta dentro de la clase "main" */
+  .main > p {
+    color: black !important;
+    margin-left: 0;
+  }
+  
+  .right {
+    background-color: #04AA6D;
+    padding: 10px;
+    float: left;
+    width: 80%; 
+  }
+  /* cambia el parrafo solamenten lo que esta dentro de la clase "right" */
+  .right > p {
+    color: black !important;
+    margin-left: 0;
+  }
+  
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  /*---------------------------------------------------------------*/
+
+
+
+
+  /*--------------------- centrar los divs ------------------------*/
+  .block-content{
+    display: grid;
+    place-items: center;
+    height: 50%;
+  }
+  .block-content > p{
+      margin-left: 0;
+      margin-top: 0;
+}
+
+  .centrado {
+    width: 800px;
+    text-align: center;
+  }
+  /*---------------------------------------------------------------*/

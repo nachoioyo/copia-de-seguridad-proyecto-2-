@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Menu de Navegación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="css/menu.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo_empresa.png" alt="foto de logo" id="logo-empresa">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="MenuCero" href="#" onclick="show('Ejemplo0')">Inicio<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="MenuUno" href="#" onclick="show('Ejemplo1')">Armas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="MenuDos" href="#" onclick="show('Ejemplo2')">Personajes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="MenuTres" href="#" onclick="show('Ejemplo3')">Historia</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+
+
+
+  <!-- Ejemplo0 -->
+  <div class="Ejemplo0" style="align-items: center;" id="Ejemplo0">
+  </div>
+
+
+  <!-- ----------------------------- Ejemplo1 ---------------------------------- -->
+  <div class="Ejemplo1" id="Ejemplo1">
+    <!-- centrar el titulo y descripción -->
+    <div class="block-content">
+      <div class="centrado">
+        <h1 id="titulo1">Contenidos de armas</h1>
+      </div>
+      <p>Los objetos que se verán a continuación son las armas que te encontrarás en el juego.</p>
+    </div>
+
+    <!-- div para centrar el contenido -->
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Facón</h4>
+        </div>
+        <div class="main">
+          <p>imagen</p>
+        </div>
+        <div class="right">
+          <p>Es nuestra arma cuerpo a cuerpo que usaremos a lo largo de la travesía, y se tiene desde el inicio.</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Pistola española y Mosquete</h4>
+        </div>
+        <div class="main">
+          <p>imagenes</p>
+        </div>
+        <div class="right">
+          <p>Es nuestra arma cuerpo a cuerpo que usaremos a lo largo de la travesía, y se tiene desde el inicio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------ -->
+
+  <!-- Ejemplo2 -->
+  <div class="Ejemplo2" style="align-content: center;" id="Ejemplo2">
+    <div>
+      <div class="block-content">
+        <div class="centrado">
+          <h1 id="titulo1">Personajes</h1>
+        </div>
+        <p>Estos modelos son los personajes que aparecen en GauShooter.</p>
+      </div>
+
+      <div class="block-content">
+        <div class="centrado">
+          <div class="left">
+            <h4>Jorgito</h4>
+          </div>
+          <div class="main">
+            <p>imagen</p>
+          </div>
+          <div class="right">
+            <p>Este señor es el personaje principal que usaremos en los niveles.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Ejemplo3 -->
+  <div class="Ejemplo3" style="align-items: center;" id="Ejemplo3">
+
+    <div class="block-content">
+      <div class="centrado">
+        <h1 id="titulo1">Objetos</h1>
+      </div>
+      <p>Estos objetos encontraremos a través de los niveles que beneficiarán a nuestro personaje.</p>
+    </div>
+
+    <!-- BUFF -->
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Fernet-cola</h4>
+        </div>
+        <div class="main">
+          <p>imagen</p>
+        </div>
+        <div class="right">
+          <p>Este objeto nos aplicará inmortalidad, claramente el objeto menos común.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- COMIDA -->
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Choripan y Mate</h4>
+        </div>
+        <div class="main">
+          <p>imagen</p>
+        </div>
+        <div class="right">
+          <p>Estas comidas nos darán vida, que estará reflejada en una barra.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- ROPA -->
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Poncho, Camisa y pañuelo</h4>
+        </div>
+        <div class="main">
+          <p>imagen</p>
+        </div>
+        <div class="right">
+          <p>Estas prendas nos darán armadura para reducir los daños.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- BOTAS -->
+    <div class="block-content">
+      <div class="centrado">
+        <div class="left">
+          <h4>Botas de cuero</h4>
+        </div>
+        <div class="main">
+          <p>imagen</p>
+        </div>
+        <div class="right">
+          <p>Estas botas nos darán velocidad de movimiento temporal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
